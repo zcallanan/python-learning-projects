@@ -54,7 +54,29 @@ def find_fibonacci(y, z):
         if result >= a and result <= b:
             array.append(result)
     return array
+            
+        
+        
+#     value_range = range(y,z)
+#     array = []
+#     a = 0
+#     b = 1
+#     c = 1
 
+#     for x in value_range:
+#         n = a + b
+#         if a < n and b == n and n >= y:
+#             array.append(a)
+#             array.append(b)
+#         if n <= z and n >= y:
+#             array.append(n)
+#         if n > z:
+#             break
+#         a = b
+#         b = n
+#     return(c, print(array))
+
+check = 0
 input_one = 0
 input_two = 0
     
@@ -63,6 +85,16 @@ while input_one != -1 or input_two != -1:
     if input_one == -1 or input_two == -1:
         break
     print(find_fibonacci(input_one, input_two))
+#     if check == 1: #subsequent iterations
+#         input_one, input_two = user_input()
+#         if input_one == -1 or input_two == -1:
+#             break
+#         print(find_fibonacci(input_one, input_two))
+#     else: #initial iteration
+#         input_one, input_two = user_input()
+#         if input_one == -1 or input_two == -1:
+#             break
+#         check = find_fibonacci(input_one, input_two)
         
 
     
